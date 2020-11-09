@@ -76,7 +76,7 @@
     }
   }
   function handleTouchMove (event) {
-    if (!gesturing) return
+    if (!gesturing.active) return
     event.stopImmediatePropagation()
     event.stopPropagation()
     gesturing.deltaX = event.x - gesturing.startX
